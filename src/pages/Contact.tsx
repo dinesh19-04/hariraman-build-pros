@@ -58,7 +58,8 @@ const Contact = () => {
       icon: MapPin,
       title: "Office Location",
       details: ["39, Kammavar Naidu Street", "Pudur Village, Ranipet Dist.", "TamilNadu, INDIA"],
-      description: "Visit our office for consultation"
+      description: "Visit our office for consultation",
+      isAddress: true
     },
     {
       icon: Clock,
@@ -198,11 +199,24 @@ const Contact = () => {
                           <p className="text-sm text-muted-foreground mb-2">
                             {info.description}
                           </p>
-                          {info.details.map((detail, detailIndex) => (
-                            <p key={detailIndex} className="text-sm text-foreground">
-                              {detail}
-                            </p>
-                          ))}
+                          {info.isAddress ? (
+                            <a 
+                              href="https://maps.google.com/maps?q=39,+Kammavar+Naidu+Street,+Pudur+Village,+Ranipet+Dist.,+TamilNadu,+INDIA"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-sm text-foreground hover:text-accent transition-colors"
+                            >
+                              {info.details.map((detail, detailIndex) => (
+                                <p key={detailIndex}>{detail}</p>
+                              ))}
+                            </a>
+                          ) : (
+                            info.details.map((detail, detailIndex) => (
+                              <p key={detailIndex} className="text-sm text-foreground">
+                                {detail}
+                              </p>
+                            ))
+                          )}
                         </div>
                       </div>
                     </CardContent>

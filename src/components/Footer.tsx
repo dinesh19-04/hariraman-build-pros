@@ -66,11 +66,16 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-start space-x-2">
                 <MapPin className="h-4 w-4 text-accent mt-1 flex-shrink-0" />
-                <span className="text-primary-foreground/80 text-sm">
+                <a 
+                  href="https://maps.google.com/maps?q=39,+Kammavar+Naidu+Street,+Pudur+Village,+Ranipet+Dist.,+TamilNadu,+INDIA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary-foreground/80 text-sm hover:text-accent transition-colors"
+                >
                   39, Kammavar Naidu Street<br />
                   Pudur Village, Ranipet Dist.<br />
                   TamilNadu, INDIA
-                </span>
+                </a>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-accent" />
