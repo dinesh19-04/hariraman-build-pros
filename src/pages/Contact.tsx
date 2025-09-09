@@ -45,19 +45,19 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      details: ["+91 98765 43210", "+91 87654 32109"],
+      details: ["+91 97867 24827"],
       description: "Call us for immediate assistance"
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["info@hariramanbuild.com", "projects@hariramanbuild.com"],
+      details: ["hariramanbuilders@gmail.com"],
       description: "Send us your project details"
     },
     {
       icon: MapPin,
       title: "Office Location",
-      details: ["123 Construction Street", "Builder City, BC 12345, India"],
+      details: ["39, Kammavar Naidu Street", "Pudur Village, Ranipet Dist.", "TamilNadu, INDIA"],
       description: "Visit our office for consultation"
     },
     {
@@ -130,7 +130,7 @@ const Contact = () => {
                         type="tel"
                         value={formData.phone}
                         onChange={(e) => handleChange("phone", e.target.value)}
-                        placeholder="+91 98765 43210"
+                        placeholder="+91 97867 24827"
                       />
                     </div>
                     <div className="space-y-2">
@@ -222,7 +222,7 @@ const Contact = () => {
                       For urgent construction issues or emergencies
                     </p>
                     <p className="text-lg font-semibold text-accent">
-                      +91 99999 88888
+                      +91 97867 24827
                     </p>
                   </div>
                 </CardContent>

@@ -24,11 +24,11 @@ const Footer = () => {
             <div className="flex space-x-4">
               <div className="flex items-center space-x-2 text-sm">
                 <Phone className="h-4 w-4 text-accent" />
-                <span>+91 98765 43210</span>
+                <span>+91 97867 24827</span>
               </div>
               <div className="flex items-center space-x-2 text-sm">
                 <Mail className="h-4 w-4 text-accent" />
-                <span>info@hariramanbuild.com</span>
+                <span>hariramanbuilders@gmail.com</span>
               </div>
             </div>
           </div>
@@ -67,21 +67,21 @@ const Footer = () => {
               <div className="flex items-start space-x-2">
                 <MapPin className="h-4 w-4 text-accent mt-1 flex-shrink-0" />
                 <span className="text-primary-foreground/80 text-sm">
-                  123 Construction Street<br />
-                  Builder City, BC 12345<br />
-                  India
+                  39, Kammavar Naidu Street<br />
+                  Pudur Village, Ranipet Dist.<br />
+                  TamilNadu, INDIA
                 </span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-accent" />
                 <span className="text-primary-foreground/80 text-sm">
-                  +91 98765 43210
+                  +91 97867 24827
                 </span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-accent" />
                 <span className="text-primary-foreground/80 text-sm">
-                  info@hariramanbuild.com
+                  hariramanbuilders@gmail.com
                 </span>
               </div>
             </div>
