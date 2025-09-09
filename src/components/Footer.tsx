@@ -1,4 +1,4 @@
-import { Building, Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -8,8 +8,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <Building className="h-8 w-8 text-accent" />
+            <div className="flex items-center space-x-3 mb-4">
+              <img 
+                src="/lovable-uploads/c5c4a84e-3046-420d-80d8-83d58f4f842a.png" 
+                alt="HARIRAMAN BUILDERS Logo" 
+                className="h-10 w-10 object-contain"
+              />
               <span className="font-bold text-xl">HARIRAMAN BUILDERS</span>
             </div>
             <p className="text-primary-foreground/80 mb-4 max-w-md">

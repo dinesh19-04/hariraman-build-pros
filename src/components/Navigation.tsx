@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Building, Phone } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navigation = () => {
@@ -21,8 +21,12 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <Link to="/" className="flex items-center space-x-2">
-              <Building className="h-8 w-8 text-accent" />
+            <Link to="/" className="flex items-center space-x-3">
+              <img 
+                src="/lovable-uploads/c5c4a84e-3046-420d-80d8-83d58f4f842a.png" 
+                alt="HARIRAMAN BUILDERS Logo" 
+                className="h-10 w-10 object-contain"
+              />
               <span className="font-bold text-xl text-foreground">
                 HARIRAMAN BUILDERS
               </span>
