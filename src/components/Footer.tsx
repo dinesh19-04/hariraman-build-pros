@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
               <img 
-                src="/lovable-uploads/c5c4a84e-3046-420d-80d8-83d58f4f842a.png" 
+                src="/lovable-uploads/hariramanbuilderslogo.png" 
                 alt="HARIRAMAN BUILDERS Logo" 
                 className="h-10 w-10 object-contain"
               />
@@ -67,7 +67,7 @@ const Footer = () => {
               <div className="flex items-start space-x-2">
                 <MapPin className="h-4 w-4 text-accent mt-1 flex-shrink-0" />
                 <a 
-                  href="https://maps.google.com/maps?q=39,+Kammavar+Naidu+Street,+Pudur+Village,+Ranipet+Dist.,+TamilNadu,+INDIA"
+                  href="https://maps.app.goo.gl/B3THvSaT8D38wHVaA?g_st=aw"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary-foreground/80 text-sm hover:text-accent transition-colors"

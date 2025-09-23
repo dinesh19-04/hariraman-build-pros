@@ -201,7 +201,7 @@ const Contact = () => {
                           </p>
                           {info.isAddress ? (
                             <a 
-                              href="https://maps.google.com/maps?q=39,+Kammavar+Naidu+Street,+Pudur+Village,+Ranipet+Dist.,+TamilNadu,+INDIA"
+                              href="https://maps.app.goo.gl/B3THvSaT8D38wHVaA?g_st=aw"
                               target="_blank"
                               rel="noopener noreferrer"
                               className="text-sm text-foreground hover:text-accent transition-colors"

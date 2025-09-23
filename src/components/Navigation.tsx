@@ -23,11 +23,11 @@ const Navigation = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-3">
               <img 
-                src="/lovable-uploads/c5c4a84e-3046-420d-80d8-83d58f4f842a.png" 
+                src="/lovable-uploads/hariramanbuilderslogo.png"
                 alt="HARIRAMAN BUILDERS Logo" 
-                className="h-10 w-10 object-contain"
+                className="h-10 w-10 object-contain rounded-full"
               />
-              <span className="font-bold text-xl text-foreground">
+              <span className="font-bold text-xl text-[hsl(30,100%,60%)]">
                 HARIRAMAN BUILDERS
               </span>
             </Link>
