@@ -23,7 +23,7 @@ const Navigation = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-3">
               <img 
-                src="/lovable-uploads/hariramanbuilderslogo.png"
+                src="/hariramanbuilderslogo.png"
                 alt="HARIRAMAN BUILDERS Logo" 
                 className="h-10 w-10 object-contain rounded-full"
               />
