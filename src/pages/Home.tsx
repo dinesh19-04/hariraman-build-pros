@@ -8,45 +8,45 @@ import commercialImage from "@/assets/commercial-project.jpg";
 
 const Home = () => {
   const features = [
-    {
-      icon: Users,
-      title: "Expert Team",
-      description: "Skilled professionals with years of construction experience"
-    },
-    {
-      icon: Award,
-      title: "Quality Assured",
-      description: "Committed to delivering excellence in every project"
-    },
-    {
-      icon: Clock,
-      title: "Timely Delivery",
-      description: "Projects completed on schedule with precision"
-    }
-  ];
+  {
+    icon: Users,
+    title: "Expert Team",
+    description: "Skilled professionals with years of construction experience"
+  },
+  {
+    icon: Award,
+    title: "Quality Assured",
+    description: "Committed to delivering excellence in every project"
+  },
+  {
+    icon: Clock,
+    title: "Timely Delivery",
+    description: "Projects completed on schedule with precision"
+  }];
+
 
   const projects = [
-    {
-      title: "Residential Construction",
-      description: "Beautiful homes built with quality materials and attention to detail",
-      image: residentialImage,
-    },
-    {
-      title: "Commercial Projects", 
-      description: "Professional commercial buildings designed for business success",
-      image: commercialImage,
-    }
-  ];
+  {
+    title: "Residential Construction",
+    description: "Beautiful homes built with quality materials and attention to detail",
+    image: residentialImage
+  },
+  {
+    title: "Commercial Projects",
+    description: "Professional commercial buildings designed for business success",
+    image: commercialImage
+  }];
+
 
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        >
-          <div className="absolute inset-0 construction-hero opacity-80"></div>
+          style={{ backgroundImage: `url(${heroImage})` }}>
+
+          <div className="absolute inset-0 construction-hero opacity-80 bg-orange-400 border-0"></div>
         </div>
         
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -85,8 +85,8 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {features.map((feature, index) => (
-              <Card key={index} className="text-center construction-card-shadow hover:shadow-lg transition-shadow">
+            {features.map((feature, index) =>
+            <Card key={index} className="text-center construction-card-shadow hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <div className="mx-auto w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-4">
                     <feature.icon className="h-8 w-8 text-accent" />
@@ -97,7 +97,7 @@ const Home = () => {
                   <CardDescription className="text-base">{feature.description}</CardDescription>
                 </CardContent>
               </Card>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -115,15 +115,15 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {projects.map((project, index) => (
-              <Card key={index} className="overflow-hidden construction-card-shadow hover:shadow-lg transition-shadow">
+            {projects.map((project, index) =>
+            <Card key={index} className="overflow-hidden construction-card-shadow hover:shadow-lg transition-shadow">
                 <div className="h-64 bg-cover bg-center" style={{ backgroundImage: `url(${project.image})` }}></div>
                 <CardHeader>
                   <CardTitle className="text-xl">{project.title}</CardTitle>
                   <CardDescription className="text-base">{project.description}</CardDescription>
                 </CardHeader>
               </Card>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -145,8 +145,8 @@ const Home = () => {
           </Button>
         </div>
       </section>
-    </div>
-  );
+    </div>);
+
 };
 
 export default Home;
